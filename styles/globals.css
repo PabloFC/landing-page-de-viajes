@@ -93,3 +93,21 @@ body {
   grid-row-start: 6;
   grid-row-end: 9;
 }
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-gap: 1rem;
+  }
+
+  .gallery__item--1,
+  .gallery__item--2,
+  .gallery__item--3,
+  .gallery__item--4,
+  .gallery__item--5,
+  .gallery__item--6 {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+}
