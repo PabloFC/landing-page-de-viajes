@@ -7,42 +7,51 @@ const Trips = () => {
         <h1>Destinos</h1>
         <p>Encuentra tu destino al mejor precio</p>
       </div>
-      <div className="row">
-        <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
-          <img
-            src="/images/nyc.jpg"
-            className="w-100 shadow-1-strong rounded mb-4"
-            alt="New York City"
-          />
-          <img
-            src="/images/paris.jpg"
-            className="w-100 shadow-1-strong rounded mb-4"
-            alt="Paris"
-          />
-        </div>
-        <div className="col-lg-4 mb-4 mb-lg-0">
-          <img
-            src="/images/tokio.jpg"
-            className="w-100 shadow-1-strong rounded mb-4"
-            alt="Tokio"
-          />
-          <img
-            src="/images/rome.jpg"
-            className="w-100 shadow-1-strong rounded mb-4"
-            alt="Rome"
-          />
-        </div>
-        <div className="col-lg-4 mb-4 mb-lg-0">
-          <img
-            src="/images/sydney.jpg"
-            className="w-100 shadow-1-strong rounded mb-4"
-            alt="Sydney"
-          />
-          <img
-            src="/images/rio.jpg"
-            className="w-100 shadow-1-strong rounded mb-4 "
-            alt="Rio de janeiro"
-          />
+
+      <div className="container">
+        <div className="gallery">
+          <figure className="gallery__item gallery__item--1">
+            <img
+              src="/images/sydney.jpg"
+              alt="Gallery image 1"
+              className="gallery__img"
+            />
+          </figure>
+          <figure className="gallery__item gallery__item--2">
+            <img
+              src="/images/rome.jpg"
+              alt="Gallery image 2"
+              className="gallery__img"
+            />
+          </figure>
+          <figure className="gallery__item gallery__item--3">
+            <img
+              src="/images/nyc.jpg"
+              alt="Gallery image 3"
+              className="gallery__img"
+            />
+          </figure>
+          <figure className="gallery__item gallery__item--4">
+            <img
+              src="/images/paris.jpg"
+              alt="Gallery image 4"
+              className="gallery__img"
+            />
+          </figure>
+          <figure className="gallery__item gallery__item--5">
+            <img
+              src="/images/rio.jpg"
+              alt="Gallery image 5"
+              className="gallery__img"
+            />
+          </figure>
+          <figure className="gallery__item gallery__item--6">
+            <img
+              src="/images/tokio.jpg"
+              alt="Gallery image 6"
+              className="gallery__img"
+            />
+          </figure>
         </div>
       </div>
     </>
