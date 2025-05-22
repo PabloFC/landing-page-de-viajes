@@ -1,58 +1,44 @@
 [
   {
     "id": 1,
-    "title": "Nueva York",
-    "country": "Estados Unidos",
-    "description": "La ciudad que nunca duerme, repleta de rascacielos icónicos y vida urbana.",
-    "image": "/images/nyc.jpg"
-  },
-  {
-    "id": 2,
-    "title": "París",
-    "country": "Francia",
-    "description": "La ciudad del amor, con su arquitectura elegante y la Torre Eiffel.",
-    "image": "/images/paris.jpg"
-  },
-  {
-    "id": 3,
-    "title": "Tokio",
-    "country": "Japón",
-    "description": "Una mezcla vibrante de tecnología avanzada y tradiciones ancestrales.",
-    "image": "/images/tokyo.jpg"
-  },
-  {
-    "id": 4,
-    "title": "Roma",
-    "country": "Italia",
-    "description": "Un museo al aire libre lleno de historia y ruinas antiguas.",
-    "image": "/images/roma.jpg"
-  },
-  {
-    "id": 5,
     "title": "Sídney",
     "country": "Australia",
     "description": "Famosa por su icónica ópera y playas soleadas.",
     "image": "/images/sydney.jpg"
   },
   {
-    "id": 6,
+    "id": 2,
+    "title": "Roma",
+    "country": "Italia",
+    "description": "Un museo al aire libre lleno de historia y ruinas antiguas.",
+    "image": "/images/rome.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Nueva York",
+    "country": "Estados Unidos",
+    "description": "La ciudad que nunca duerme, repleta de rascacielos icónicos y vida urbana.",
+    "image": "/images/nyc.jpg"
+  },
+  {
+    "id": 4,
+    "title": "París",
+    "country": "Francia",
+    "description": "La ciudad del amor, con su arquitectura elegante y la Torre Eiffel.",
+    "image": "/images/paris.jpg"
+  },
+  {
+    "id": 5,
     "title": "Río de Janeiro",
     "country": "Brasil",
     "description": "Carnaval, playas y el Cristo Redentor dominando el paisaje.",
     "image": "/images/rio.jpg"
   },
   {
-    "id": 7,
-    "title": "El Cairo",
-    "country": "Egipto",
-    "description": "El hogar de las pirámides y una historia milenaria.",
-    "image": "/images/elcairo.jpg"
-  },
-  {
-    "id": 8,
-    "title": "Bangkok",
-    "country": "Tailandia",
-    "description": "Templos dorados, mercados flotantes y comida callejera inolvidable.",
-    "image": "/images/bangkok.jpg"
+    "id": 6,
+    "title": "Tokio",
+    "country": "Japón",
+    "description": "Una mezcla vibrante de tecnología avanzada y tradiciones ancestrales.",
+    "image": "/images/tokio.jpg"
   }
 ]
