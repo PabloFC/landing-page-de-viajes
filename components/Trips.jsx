@@ -1,33 +1,36 @@
 import React, { useEffect, useState } from "react";
 
 const Trips = () => {
-  const [destinos, setDestinos] = useState([]);
+  const [trips, setTrips] = useState([]);
 
   useEffect(() => {
     fetch("/data/trips.json")
       .then((res) => res.json())
-      .then((data) => setDestinos(data));
+      .then((data) => setTrips(data));
   }, []);
 
   return (
     <>
       <div className="d-flex flex-column justify-content-center align-items-center py-5">
-        <h1>Destinos</h1>
-        <p>Encuentra tu destino al mejor precio</p>
+        <h1>Descubre tu próximo destino</h1>
+        <p>
+          Viaja por el mundo al mejor precio y vive experiencias inolvidables.
+        </p>
       </div>
 
       <div className="container">
         <div className="gallery">
-          {destinos.map((destino, idx) => (
+          {trips.map((trip, idx) => (
             <figure
-              key={destino.id}
-              className={`gallery__item gallery__item--${idx + 1}`}
+              key={trip.id}
+              className={`gallery__item gallery__item--${
+                idx + 1
+              } gallery__figure`}
             >
-              <img
-                src={destino.image}
-                alt={destino.title}
-                className="gallery__img"
-              />
+              <img src={trip.image} alt={trip.title} className="gallery__img" />
+              <div className="overlay">
+                <button className="trip-btn">{trip.title}</button>
+              </div>
             </figure>
           ))}
         </div>
