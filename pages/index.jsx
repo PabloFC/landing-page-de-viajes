@@ -1,6 +1,7 @@
+import Head from "next/head";
 import Hero from "@/components/Hero";
 import Trips from "@/components/Trips";
-import Head from "next/head";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       </Head>
       <Hero />
       <Trips />
+      <Footer />
     </>
   );
 }
