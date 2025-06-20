@@ -11,7 +11,7 @@ const Trips = () => {
 
   return (
     <>
-      <div className="d-flex flex-column justify-content-center align-items-center py-5">
+      <div className="d-flex flex-column justify-content-center align-items-center p-5">
         <h1>Descubre tu próximo destino</h1>
         <p>
           Viaja por el mundo al mejor precio y vive experiencias inolvidables.

@@ -15,13 +15,41 @@ body {
   padding: 0;
 }
 
-.hero-section {
-  background-image: url("https://images.unsplash.com/photo-1594640705123-4009f76b1afd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw0fHxkZnxlbnwwfDB8fHwxNzEwNzQ0MDMzfDA&ixlib=rb-4.0.3&q=80&w=1080");
-  background-size: cover;
-  background-position: center;
-  color: #ffffff;
-  text-align: center;
-  padding: 100px 0;
+/* Hero Section */
+
+.box {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  top: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .hero-section h1 {
@@ -132,6 +160,7 @@ body {
   background: #171717;
   color: #fff;
 }
+
 @media (max-width: 600px) {
   .gallery {
     grid-template-columns: 1fr;
