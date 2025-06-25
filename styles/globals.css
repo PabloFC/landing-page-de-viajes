@@ -1,6 +1,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-color: #0a2342;
+  --secondary-color: #e9c46a;
+  --secondary-hover: #d4ab4f;
 }
 
 body {
@@ -13,6 +16,30 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.primary-color {
+  color: #0a2342;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--text-on-secondary);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-hover);
 }
 
 /* Hero Section */
@@ -55,10 +82,14 @@ video {
 .hero-section h1 {
   font-size: 3rem;
   font-weight: bold;
+  color: var(--background);
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9), 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .hero-section p {
   font-size: 1.2rem;
+  color: var(--background);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 //Trips
