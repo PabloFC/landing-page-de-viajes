@@ -10,8 +10,8 @@ const Trips = () => {
   }, []);
 
   return (
-    <>
-      <div className="d-flex flex-column justify-content-center align-items-center p-5">
+    <section className="trips-section">
+      <div className="d-flex flex-column justify-content-center align-items-center trips-header">
         <h1>Descubre tu próximo destino</h1>
         <p>
           Viaja por el mundo al mejor precio y vive experiencias inolvidables.
@@ -35,7 +35,7 @@ const Trips = () => {
           ))}
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
