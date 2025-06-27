@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <>
+    <div className="page-wrapper">
       <Head>
         <title>Home</title>
         <meta
@@ -14,9 +14,11 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Hero />
-      <Trips />
+      <div className="content-wrapper">
+        <Hero />
+        <Trips />
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }

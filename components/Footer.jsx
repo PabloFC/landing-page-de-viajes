@@ -4,10 +4,7 @@ const Footer = () => {
   return (
     <>
       {/* Footer */}
-      <footer
-        className="text-center text-lg-start text-white mt-5"
-        style={{ backgroundColor: "#45526e" }}
-      >
+      <footer className="text-center text-lg-start text-white footer-main">
         {/* Grid container */}
         <div className="container  p-5 pb-0">
           {/* Section: Links */}
@@ -16,7 +13,7 @@ const Footer = () => {
             <div className="row">
               {/* Grid column */}
               <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 className="text-uppercase mb-4 font-weight-bold">
+                <h6 className="text-uppercase mb-4 font-weight-bold footer-title">
                   Company name
                 </h6>
                 <p>
@@ -28,7 +25,7 @@ const Footer = () => {
               <hr className="w-100 clearfix d-md-none" />
               {/* Grid column */}
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 className="text-uppercase mb-4 font-weight-bold">
+                <h6 className="text-uppercase mb-4 font-weight-bold footer-title">
                   Explora
                 </h6>
                 <p>
@@ -48,7 +45,9 @@ const Footer = () => {
               <hr className="w-100 clearfix d-md-none" />
               {/* Grid column */}
               <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 className="text-uppercase mb-4 font-weight-bold">FAQ</h6>
+                <h6 className="text-uppercase mb-4 font-weight-bold footer-title">
+                  FAQ
+                </h6>
                 <p>
                   <a className="text-white">¿Cómo reservo un viaje?</a>
                 </p>
@@ -66,7 +65,7 @@ const Footer = () => {
               <hr className="w-100 clearfix d-md-none" />
               {/* Grid column */}
               <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 className="text-uppercase mb-4 font-weight-bold">
+                <h6 className="text-uppercase mb-4 font-weight-bold footer-title">
                   Contacto
                 </h6>
                 <p>
@@ -89,50 +88,64 @@ const Footer = () => {
           {/* Section: Links */}
           <hr className="my-3" />
           {/* Section: Copyright */}
-          <section className="p-3 pt-0">
+          <section className="footer-copyright p-4">
             <div className="row d-flex align-items-center">
               {/* Grid column */}
               <div className="col-md-7 col-lg-8 text-center text-md-start">
                 {/* Copyright */}
-                <div className="p-3">
+                <div className="footer-copyright-text">
                   © 2025 Copyright: {/* */}
-                  <a className="text-white" href="https://github.com/PabloFC">
+                  <a
+                    className="footer-copyright-link"
+                    href="https://github.com/PabloFC"
+                  >
                     PabloFC
                   </a>
+                  <span className="ms-2">| Todos los derechos reservados</span>
                 </div>
                 {/* Copyright */}
               </div>
               {/* Grid column */}
               {/* Grid column */}
-              <div className="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                {/* Facebook */}
-                <a
-                  className="btn btn-outline-light btn-floating m-1"
-                  role="button"
-                >
-                  <i className="fab fa-facebook-f" />
-                </a>
-                {/* Twitter */}
-                <a
-                  className="btn btn-outline-light btn-floating m-1"
-                  role="button"
-                >
-                  <i className="fab fa-twitter" />
-                </a>
-                {/* Google */}
-                <a
-                  className="btn btn-outline-light btn-floating m-1"
-                  role="button"
-                >
-                  <i className="fab fa-google" />
-                </a>
-                {/* Instagram */}
-                <a
-                  className="btn btn-outline-light btn-floating m-1"
-                  role="button"
-                >
-                  <i className="fab fa-instagram" />
-                </a>
+              <div className="col-md-5 col-lg-4 text-center text-md-end">
+                <div className="footer-social-icons">
+                  {/* Facebook */}
+                  <a
+                    className="footer-social-btn"
+                    href="#"
+                    role="button"
+                    aria-label="Facebook"
+                  >
+                    <i className="fab fa-facebook-f" />
+                  </a>
+                  {/* Twitter */}
+                  <a
+                    className="footer-social-btn"
+                    href="#"
+                    role="button"
+                    aria-label="Twitter"
+                  >
+                    <i className="fab fa-twitter" />
+                  </a>
+                  {/* Instagram */}
+                  <a
+                    className="footer-social-btn"
+                    href="#"
+                    role="button"
+                    aria-label="Instagram"
+                  >
+                    <i className="fab fa-instagram" />
+                  </a>
+                  {/* LinkedIn */}
+                  <a
+                    className="footer-social-btn"
+                    href="#"
+                    role="button"
+                    aria-label="LinkedIn"
+                  >
+                    <i className="fab fa-linkedin-in" />
+                  </a>
+                </div>
               </div>
               {/* Grid column */}
             </div>
