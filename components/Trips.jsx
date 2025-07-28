@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 const Trips = () => {
   const [trips, setTrips] = useState([]);
+  const router = useRouter();
 
   useEffect(() => {
     fetch("/data/trips.json")
       .then((res) => res.json())
       .then((data) => setTrips(data));
   }, []);
+
+  const handleTripClick = (tripId) => {
+    router.push(`/trip/${tripId}`);
+  };
 
   return (
     <section className="trips-section">
@@ -29,7 +35,12 @@ const Trips = () => {
             >
               <img src={trip.image} alt={trip.title} className="gallery__img" />
               <div className="overlay">
-                <button className="trip-btn">{trip.title}</button>
+                <button
+                  className="trip-btn"
+                  onClick={() => handleTripClick(trip.id)}
+                >
+                  {trip.title}
+                </button>
               </div>
             </figure>
           ))}
